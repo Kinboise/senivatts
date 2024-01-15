@@ -1,4 +1,4 @@
-def senivatts(text, lang='sr', voice=0, rate=1, file=None, output=None):
+def senivatts(text, lang='sr', voice=1, rate=1, file=None, output=None):
     import yaml
     with open('senivatts.yml','r',-1,'utf-8') as s:
         dict = yaml.safe_load(s)
@@ -15,8 +15,8 @@ def senivatts(text, lang='sr', voice=0, rate=1, file=None, output=None):
 
     import pyttsx4
     engine = pyttsx4.init('sapi5')
-    engine.setProperty('voice', r'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices' + '\\' + info['voices'][voice])
-    engine.setProperty('rate', info['rates'][voice] * rate)
+    engine.setProperty('voice', r'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices' + '\\' + info['voices'][voice-1])
+    engine.setProperty('rate', info['rates'][voice-1] * rate)
     if output == None:
         engine.say(text)
     else:
