@@ -1,4 +1,4 @@
-def senivatts(text, lang='sr', voice=1, rate=1, file=None, output=None):
+def senivatts(text, lang='ka', voice=1, rate=1, file=None, output=None):
     import yaml
     with open('senivatts.yml','r',-1,'utf-8') as s:
         dict = yaml.safe_load(s)
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--file", help="读取文件")
     parser.add_argument("-t", "--text", help="读取文本，默认nes!, basone", default='nes!, basone')
-    parser.add_argument("-l", "--lang", help="音源语种，默认sr", default='sr')
+    parser.add_argument("-l", "--lang", help="音源语种，默认ka", default='ka')
     parser.add_argument("-v", "--voice", help="音源编号，默认0", type=int, default=0)
     parser.add_argument("-r", "--rate", help="速度倍率，默认1", type=float, default=1)
     parser.add_argument("-o", "--output", help="输出音频文件")

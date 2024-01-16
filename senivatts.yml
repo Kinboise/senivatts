@@ -121,6 +121,7 @@ sq:
     x: sh
     c: ç
     w: u
+    r: rr
 # 土库曼语
 tk:
   voices:
@@ -217,3 +218,5 @@ ka:
     t: თ
     k: ქ
     f: hv
+    a: ა
+    i: ი
