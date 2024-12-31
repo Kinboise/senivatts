@@ -1,1 +1,11 @@
 lx.txt
+file_list.txt
+hantts.py
+listvoices.py
+perlinetts.py
+生成报站.py
+.vscode
+*.wav
+__pycache__
+wav
+gj
