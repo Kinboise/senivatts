@@ -16,9 +16,9 @@ Requires Python3 and packages:
 pip install -r requirements.txt
 ```
 
-安装支持 SAPI5 的音源。我这里使用了 RHVoice.org 的免费音源。
+安装支持 SAPI5 的音源。我这里使用了 RHVoice.org 的免费音源以及微软 Edge 音源。
 
-Install voice banks that supports SAPI 5. I'm using free voices from RHVoice.org.
+Install voice banks that supports SAPI 5. I'm using free voices from RHVoice.org and Microsoft Edge.
 
 下载本仓库至任意文件夹。
 
@@ -54,6 +54,6 @@ python senivatts.py -f soc.txt -l sq -o soc.wav
 
 ## 配置文件 Config
 
-`senivatts.yml` 中包含声库注册表路径（部分）、基准语速、帜和语转换规则。如利用塞尔维亚语声库`sr`来朗读帜和语时，输入的文本 "tence Dcanqovi" 会被转为 "tenče džanovi" 来朗读。如需适配其他语言，更改各语种的`rules`部分即可。
+`senivatts.yml` 中包含声库注册表路径（部分）、基准语速、帜和语转换规则。如利用塞尔维亚语声库`sr`来朗读帜和语时，输入的文本 "tence Dcanqovi" 会被转为 "тенче џанови" 来朗读。如需适配其他语言，更改各语种的`rules`部分即可。
 
-`senivatts.yml` contains names of the voice banks, the default rate, and the rules to convert Seniva text. Take `sr` Serbian as an example. Seniva text input "tence Dcanqovi" will be converted to "tenče džanovi" for the Serbian TTS to read. Change `rules` to adapt to other languages.
+`senivatts.yml` contains names of the voice banks, the default rate, and the rules to convert Seniva text. Take `sr` Serbian as an example. Seniva text input "tence Dcanqovi" will be converted to "тенче џанови" for the Serbian TTS to read. Change `rules` to adapt to other languages.
